@@ -17,6 +17,7 @@ public class BibliotecaService {
     public String tituloRetorno(String nome) {
         Optional<Livros> lOptional = livroRepository.findByReserveName(nome);
         return lOptional.get().getTitulo().toString();
+        
     }
 
 }
